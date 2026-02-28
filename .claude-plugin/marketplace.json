@@ -246,6 +246,192 @@
         "./cli-tool/components/mcps/productivity/notion-integration.json",
         "./cli-tool/components/mcps/productivity/linear-integration.json"
       ]
+    },
+    {
+      "name": "full-stack-starter",
+      "source": "./",
+      "description": "Opinionated full-stack starter bundle: Next.js + Supabase + git workflow + CI/CD. Everything needed to ship a production web app from day one.",
+      "version": "1.0.0",
+      "author": {"name": "Infiniteyieldai"},
+      "license": "MIT",
+      "keywords": ["nextjs", "supabase", "fullstack", "react", "postgres", "starter", "production"],
+      "strict": false,
+      "commands": [
+        "./cli-tool/components/commands/nextjs-vercel/nextjs-scaffold.md",
+        "./cli-tool/components/commands/nextjs-vercel/nextjs-component-generator.md",
+        "./cli-tool/components/commands/nextjs-vercel/nextjs-api-tester.md",
+        "./cli-tool/components/commands/nextjs-vercel/nextjs-performance-audit.md",
+        "./cli-tool/components/commands/nextjs-vercel/vercel-deploy-optimize.md",
+        "./cli-tool/components/commands/git-workflow/commit.md",
+        "./cli-tool/components/commands/git-workflow/create-pr.md",
+        "./cli-tool/components/commands/git-workflow/branch-cleanup.md",
+        "./cli-tool/components/commands/database/supabase-migration-assistant.md",
+        "./cli-tool/components/commands/database/supabase-schema-sync.md",
+        "./cli-tool/components/commands/deployment/ci-setup.md"
+      ],
+      "agents": [
+        "./cli-tool/components/agents/development-team/frontend-developer.md",
+        "./cli-tool/components/agents/development-team/fullstack-developer.md",
+        "./cli-tool/components/agents/development-team/backend-architect.md",
+        "./cli-tool/components/agents/development-tools/architect-reviewer.md"
+      ],
+      "mcpServers": [
+        "./cli-tool/components/mcps/database/supabase.json",
+        "./cli-tool/components/mcps/database/postgresql-integration.json",
+        "./cli-tool/components/mcps/devtools/github-integration.json"
+      ],
+      "hooks": [
+        "./cli-tool/components/hooks/git/conventional-commits.json",
+        "./cli-tool/components/hooks/git-workflow/auto-git-add.json",
+        "./cli-tool/components/hooks/testing/test-runner.json",
+        "./cli-tool/components/hooks/security/secret-scanner.json"
+      ]
+    },
+    {
+      "name": "data-science-starter",
+      "source": "./",
+      "description": "Data science and analytics starter: AI/ML agents, database integrations, and Python data engineering workflows for building data-driven features.",
+      "version": "1.0.0",
+      "author": {"name": "Infiniteyieldai"},
+      "license": "MIT",
+      "keywords": ["data-science", "machine-learning", "analytics", "python", "database", "ai", "ml"],
+      "strict": false,
+      "commands": [
+        "./cli-tool/components/commands/setup/design-database-schema.md",
+        "./cli-tool/components/commands/database/supabase-data-explorer.md",
+        "./cli-tool/components/commands/database/supabase-performance-optimizer.md",
+        "./cli-tool/components/commands/performance/optimize-api-performance.md"
+      ],
+      "agents": [
+        "./cli-tool/components/agents/data-ai/ai-engineer.md",
+        "./cli-tool/components/agents/data-ai/data-engineer.md",
+        "./cli-tool/components/agents/data-ai/data-scientist.md",
+        "./cli-tool/components/agents/data-ai/ml-engineer.md",
+        "./cli-tool/components/agents/data-ai/mlops-engineer.md",
+        "./cli-tool/components/agents/deep-research-team/data-analyst.md",
+        "./cli-tool/components/agents/deep-research-team/data-researcher.md"
+      ],
+      "mcpServers": [
+        "./cli-tool/components/mcps/database/postgresql-integration.json",
+        "./cli-tool/components/mcps/database/supabase.json",
+        "./cli-tool/components/mcps/database/neon.json",
+        "./cli-tool/components/mcps/deepresearch/mcp-server-nia.json"
+      ],
+      "hooks": [
+        "./cli-tool/components/hooks/post-tool/run-tests-after-changes.json",
+        "./cli-tool/components/hooks/monitoring/langsmith-tracing.json"
+      ]
+    },
+    {
+      "name": "content-creator",
+      "source": "./",
+      "description": "Content creation bundle for writers, marketers, and podcasters: multi-platform publishing, research tools, and AI-assisted content workflows.",
+      "version": "1.0.0",
+      "author": {"name": "Infiniteyieldai"},
+      "license": "MIT",
+      "keywords": ["content", "marketing", "writing", "blog", "podcast", "social-media", "seo"],
+      "strict": false,
+      "commands": [
+        "./cli-tool/components/commands/marketing/publisher-all.md",
+        "./cli-tool/components/commands/marketing/publisher-devto.md",
+        "./cli-tool/components/commands/marketing/publisher-linkedin.md",
+        "./cli-tool/components/commands/marketing/publisher-medium.md",
+        "./cli-tool/components/commands/marketing/publisher-x.md",
+        "./cli-tool/components/commands/documentation/create-user-guide.md",
+        "./cli-tool/components/commands/documentation/generate-api-documentation.md"
+      ],
+      "agents": [
+        "./cli-tool/components/agents/business-marketing/content-marketer.md",
+        "./cli-tool/components/agents/business-marketing/competitive-analyst.md",
+        "./cli-tool/components/agents/business-marketing/communication-excellence-coach.md",
+        "./cli-tool/components/agents/podcast-creator-team/episode-orchestrator.md",
+        "./cli-tool/components/agents/podcast-creator-team/comprehensive-researcher.md",
+        "./cli-tool/components/agents/podcast-creator-team/academic-research-synthesizer.md",
+        "./cli-tool/components/agents/deep-research-team/academic-researcher.md",
+        "./cli-tool/components/agents/deep-research-team/competitive-intelligence-analyst.md"
+      ],
+      "mcpServers": [
+        "./cli-tool/components/mcps/web/web-search-prime.json",
+        "./cli-tool/components/mcps/web/web-fetch.json",
+        "./cli-tool/components/mcps/web/web-reader.json",
+        "./cli-tool/components/mcps/audio/elevenlabs.json",
+        "./cli-tool/components/mcps/marketing/facebook-ads-mcp-server.json",
+        "./cli-tool/components/mcps/marketing/google-ads-mcp-server.json"
+      ]
+    },
+    {
+      "name": "security-auditor",
+      "source": "./",
+      "description": "Enterprise security bundle: automated vulnerability scanning, secret detection, compliance checking, and incident response — with pre/post tool hooks to catch issues in real time.",
+      "version": "1.0.0",
+      "author": {"name": "Infiniteyieldai"},
+      "license": "MIT",
+      "keywords": ["security", "audit", "vulnerability", "compliance", "secret-detection", "pentesting"],
+      "strict": false,
+      "commands": [
+        "./cli-tool/components/commands/security/security-audit.md",
+        "./cli-tool/components/commands/security/dependency-audit.md",
+        "./cli-tool/components/commands/security/penetration-test.md",
+        "./cli-tool/components/commands/security/secrets-scanner.md",
+        "./cli-tool/components/commands/security/add-authentication-system.md",
+        "./cli-tool/components/commands/security/code-security-review.md"
+      ],
+      "agents": [
+        "./cli-tool/components/agents/security/security-auditor.md",
+        "./cli-tool/components/agents/security/penetration-tester.md",
+        "./cli-tool/components/agents/security/compliance-specialist.md",
+        "./cli-tool/components/agents/security/incident-responder.md",
+        "./cli-tool/components/agents/security/api-security-audit.md",
+        "./cli-tool/components/agents/security/compliance-auditor.md"
+      ],
+      "hooks": [
+        "./cli-tool/components/hooks/security/secret-scanner.json",
+        "./cli-tool/components/hooks/security/dangerous-command-blocker.json",
+        "./cli-tool/components/hooks/security/file-protection.json",
+        "./cli-tool/components/hooks/pre-tool/backup-before-edit.json",
+        "./cli-tool/components/hooks/git/prevent-direct-push.json"
+      ]
+    },
+    {
+      "name": "api-builder",
+      "source": "./",
+      "description": "API design and development bundle: REST and GraphQL architects, OpenAPI tooling, API testing, and GitHub integration for teams building backend APIs and microservices.",
+      "version": "1.0.0",
+      "author": {"name": "Infiniteyieldai"},
+      "license": "MIT",
+      "keywords": ["api", "rest", "graphql", "openapi", "swagger", "backend", "microservices", "testing"],
+      "strict": false,
+      "commands": [
+        "./cli-tool/components/commands/setup/design-rest-api.md",
+        "./cli-tool/components/commands/setup/implement-graphql-api.md",
+        "./cli-tool/components/commands/documentation/generate-api-documentation.md",
+        "./cli-tool/components/commands/documentation/doc-api.md",
+        "./cli-tool/components/commands/testing/generate-tests.md",
+        "./cli-tool/components/commands/testing/e2e-setup.md",
+        "./cli-tool/components/commands/testing/generate-test-cases.md",
+        "./cli-tool/components/commands/git-workflow/create-pr.md",
+        "./cli-tool/components/commands/git-workflow/commit.md"
+      ],
+      "agents": [
+        "./cli-tool/components/agents/api-graphql/api-architect.md",
+        "./cli-tool/components/agents/api-graphql/api-designer.md",
+        "./cli-tool/components/agents/api-graphql/graphql-architect.md",
+        "./cli-tool/components/agents/api-graphql/graphql-performance-optimizer.md",
+        "./cli-tool/components/agents/development-tools/architect-reviewer.md",
+        "./cli-tool/components/agents/development-tools/qa-automation-engineer.md",
+        "./cli-tool/components/agents/documentation/api-documenter.md",
+        "./cli-tool/components/agents/documentation/api-documentation-specialist.md"
+      ],
+      "mcpServers": [
+        "./cli-tool/components/mcps/devtools/github-integration.json",
+        "./cli-tool/components/mcps/browser_automation/playwright-mcp.json",
+        "./cli-tool/components/mcps/web/web-fetch.json"
+      ],
+      "hooks": [
+        "./cli-tool/components/hooks/testing/test-runner.json",
+        "./cli-tool/components/hooks/git/conventional-commits.json",
+        "./cli-tool/components/hooks/security/secret-scanner.json"
+      ]
     }
   ]
 }
