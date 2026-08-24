@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude Code Templates"
+  short_description: "Repo-specific patterns and workflows for claude-code-templates"
+  default_prompt: "Use the claude-code-templates repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
